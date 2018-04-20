@@ -1,0 +1,11 @@
+<h1>Contact List</h1>
+<ul>
+  @foreach(var Contact in Model)
+  {
+    <li>@Contact.GetDescription()</li>
+  }
+</ul>
+<p><a href="/Contact/new">Add another contact</a></p>
+<form action="/Contact/delete" method="post">
+  <button type="submit" name="button">Clear All Items</button>
+</form>
