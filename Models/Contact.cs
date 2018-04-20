@@ -11,15 +11,15 @@ namespace ContactList.Models
     private string _phoneNumber;
     private string _address;
     private string _birthDate;
-    private static List<Contact> _instances = new List<Contact> {};
+    // private static List<Contact> _instances = new List<Contact> {};
 
-    public Contact (string name, string email, string phoneNumber, string address, string _birthDate)
+    public Contact (string name, string email, string phoneNumber, string address, string birthDate)
     {
       _name = name;
       _email = email;
       _phoneNumber = phoneNumber;
       _address = address;
-      _birthDate = _birthDate;
+      _birthDate = birthDate;
     }
     public string GetName()
     {
@@ -39,7 +39,7 @@ namespace ContactList.Models
     }
     public string GetPhoneNumber()
     {
-      return _phoneNumber
+      return _phoneNumber;
     }
     public void SetPhoneNumber(string newPhoneNumber)
     {
@@ -59,20 +59,20 @@ namespace ContactList.Models
     }
     public void SetBirthDate(string newBirthdate)
     {
-      _birthDate = newBirthDate;
+      _birthDate = newBirthdate;
     }
-    public static Item<Contact> GetAll()
-    {
-      return _instances;
-    }
-    public void Save()
-    {
-      _instances.Add(this);
-    }
-    public static void ClearAll()
-    {
-      _instances.Clear();
-    }
+    // public static Item<Contact> GetAll()
+    // {
+    //   return _instances;
+    // }
+    // public void Save()
+    // {
+    //   _instances.Add(this);
+    // }
+    // public static void ClearAll()
+    // {
+    //   _instances.Clear();
+    // }
 
   }
 }
