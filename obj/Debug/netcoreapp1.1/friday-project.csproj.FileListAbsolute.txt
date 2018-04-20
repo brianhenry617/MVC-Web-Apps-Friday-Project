@@ -1,0 +1,5 @@
+/Users/brianhenry/Desktop/MVC-Web-Apps-Friday-Project/bin/Debug/netcoreapp1.1/friday-project.deps.json
+/Users/brianhenry/Desktop/MVC-Web-Apps-Friday-Project/bin/Debug/netcoreapp1.1/friday-project.runtimeconfig.json
+/Users/brianhenry/Desktop/MVC-Web-Apps-Friday-Project/bin/Debug/netcoreapp1.1/friday-project.runtimeconfig.dev.json
+/Users/brianhenry/Desktop/MVC-Web-Apps-Friday-Project/obj/Debug/netcoreapp1.1/friday-project.csproj.CoreCompileInputs.cache
+/Users/brianhenry/Desktop/MVC-Web-Apps-Friday-Project/obj/Debug/netcoreapp1.1/friday-project.AssemblyInfo.cs
