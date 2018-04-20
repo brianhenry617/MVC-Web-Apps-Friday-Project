@@ -2,7 +2,12 @@
 <ul>
   @foreach(var Contact in Model)
   {
-    <li>@Contact.GetDescription()</li>
+    <li>@Contact.GetName()</li>
+    <li>@Contact.GetEmail()</li>
+    <li>@Contact.GetPhoneNumber()</li>
+    <li>@Contact.GetAddress()</li>
+    <li>@Contact.GetBirthDate()</li>
+
   }
 </ul>
 <p><a href="/Contact/new">Add another contact</a></p>
