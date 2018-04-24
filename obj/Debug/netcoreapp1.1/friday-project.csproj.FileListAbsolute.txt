@@ -13,3 +13,4 @@
 /Users/Guest/Desktop/MVC-Web-Apps-Friday-Project/obj/Debug/netcoreapp1.1/friday-project.AssemblyInfo.cs
 /Users/Guest/Desktop/MVC-Web-Apps-Friday-Project/obj/Debug/netcoreapp1.1/friday-project.dll
 /Users/Guest/Desktop/MVC-Web-Apps-Friday-Project/obj/Debug/netcoreapp1.1/friday-project.pdb
+/Users/brianhenry/Desktop/MVC-Web-Apps-Friday-Project/obj/Debug/netcoreapp1.1/friday-project.AssemblyInfoInputs.cache

@@ -22,7 +22,7 @@ namespace Home.Controllers
     [HttpPost("/Home")]
     public ActionResult Create()
     {
-      Contact newContact = new Contact (Request.Form["new-Contact"]);
+      Contact newContact = new Contact (Request.Form["name"], Request.Form["email"], Request.Form["phoneNumber"], Request.Form["address"], Request.Form["birthDate"]);
       newContact.Save();
       List<Contact> allContact = Contact.GetAll();
       return View("Home", allContact);
