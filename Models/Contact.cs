@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System;
 
-namespace ContactList.Models
+namespace Home.Models
 {
   public class Contact
   {
@@ -11,7 +11,7 @@ namespace ContactList.Models
     private string _phoneNumber;
     private string _address;
     private string _birthDate;
-    // private static List<Contact> _instances = new List<Contact> {};
+    private static List<Contact> _instances = new List<Contact> {};
 
     public Contact (string name, string email, string phoneNumber, string address, string birthDate)
     {
@@ -61,18 +61,18 @@ namespace ContactList.Models
     {
       _birthDate = newBirthdate;
     }
-    // public static Item<Contact> GetAll()
-    // {
-    //   return _instances;
-    // }
-    // public void Save()
-    // {
-    //   _instances.Add(this);
-    // }
-    // public static void ClearAll()
-    // {
-    //   _instances.Clear();
-    // }
+    public static List<Contact> GetAll()
+    {
+      return _instances;
+    }
+    public void Save()
+    {
+      _instances.Add(this);
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
 
   }
 }
