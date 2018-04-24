@@ -25,7 +25,7 @@ namespace Home.Controllers
       Contact newContact = new Contact (Request.Form["new-Contact"]);
       newContact.Save();
       List<Contact> allContact = Contact.GetAll();
-      return View("Index", allContact);
+      return View("Home", allContact);
     }
 
     [HttpPost("/Home/delete")]
