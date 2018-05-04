@@ -1,14 +1,17 @@
-using System.Collections.Generic;
-using System.IO;
 using System;
+using System.IO;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using Contact.Models;
 
-namespace Home.Models
+namespace Contact.Models
 {
-  public class Contact
+  public class contact
   {
+    private static List<contact> _instances = new List<Contact> {};
     private string _name;
     private string _email;
-    private string _phoneNumber;
+    private int _phoneNumber;
     private string _address;
     private string _birthDate;
     private static List<Contact> _instances = new List<Contact> {};
