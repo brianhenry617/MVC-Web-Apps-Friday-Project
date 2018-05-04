@@ -6,7 +6,7 @@ using Contact.Models;
 
 namespace Contact.Models
 {
-  public class contact
+  public class Contact
   {
     private static List<contact> _instances = new List<Contact> {};
     private string _name;
@@ -14,7 +14,6 @@ namespace Contact.Models
     private int _phoneNumber;
     private string _address;
     private string _birthDate;
-    private static List<Contact> _instances = new List<Contact> {};
 
     public Contact (string name, string email, string phoneNumber, string address, string birthDate)
     {
@@ -76,6 +75,5 @@ namespace Contact.Models
     {
       _instances.Clear();
     }
-
   }
 }

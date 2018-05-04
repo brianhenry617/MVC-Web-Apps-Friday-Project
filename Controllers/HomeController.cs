@@ -13,13 +13,13 @@ namespace Contact.Controller
       List <Contact> all Contacts = Contact.GetAll();
       return View(allContacts);
     }
-    
+
     [HttpGet("/contact/new")]
     public ActionResult CreateForm()
     {
       return View();
     }
-    
+
     [HttpPost("/contact")]
     public ActionResult Create()
     {
@@ -27,7 +27,7 @@ namespace Contact.Controller
       List <Contact> allContacts = Contact.GetAll();
       return View("Index");
     }
-    
+
     [HttpPost("contact/clear")]
     public ActionResult Clear()
     {
