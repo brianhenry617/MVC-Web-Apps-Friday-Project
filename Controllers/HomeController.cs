@@ -25,7 +25,7 @@ namespace Contact.Controller
     {
       Contact newContact = new Contact(Request.Form["name"], Request.Form["email"], Request.Form["phoneNumber"], Request.Form["address"], Request.Form["birthDate"]);
       List <Contact> allContacts = Contact.GetAll();
-      return View("Index");
+      return View("Index", allContacts);
     }
 
     [HttpPost("contact/clear")]
