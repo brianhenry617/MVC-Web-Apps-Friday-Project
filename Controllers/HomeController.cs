@@ -8,14 +8,14 @@ namespace Contact.Controller
   public class HomeController : Controller
   {
     [HttpGet("/")]
-    public ActionResult Index()
+    public ActionResult Index();
     {
       List <Contact> all Contacts = Contact.GetAll();
       return View(allContacts);
     }
 
     [HttpGet("/contact/new")]
-    public ActionResult CreateForm()
+    public ActionResult CreateForm();
     {
       return View();
     }
