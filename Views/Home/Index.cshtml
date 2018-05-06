@@ -14,11 +14,11 @@
       <li>@Contact.GetPhoneNumber()</li>
       <li>@Contact.GetAddress()</li>
       <li>@Contact.GetBirthDate()</li>
-      
+
     }
   </ul>
-  <p><a href="/Home/new">Add another contact</a></p>
-  <form action="/Home/delete" method="post">
+  <p><a href="/contact/new">Add another contact</a></p>
+  <form action="/Views/Contact/CreateForm" method="post">
     <button type="submit" name="button">Clear All Items</button>
   </form>
 </body>

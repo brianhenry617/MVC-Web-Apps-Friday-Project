@@ -25,7 +25,9 @@ namespace HomeController
     public ActionResult Create()
     {
       Contact newContact = new Contact(Request.Form["name"], Request.Form["email"], Request.Form["phoneNumber"], Request.Form["address"], Request.Form["birthDate"]);
+
       List <Contact> allContacts = Contact.GetAll();
+      allContacts.Add(newContact);
       return View("Index", allContacts);
     }
 
