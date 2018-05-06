@@ -2,16 +2,15 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Contact.Models;
 
-namespace Contact.Models
+namespace HomeController.Models
 {
   public class Contact
   {
-    private static List<contact> _instances = new List<Contact> {};
+    private static List<Contact> _instances = new List<Contact> {};
     private string _name;
     private string _email;
-    private int _phoneNumber;
+    private string _phoneNumber;
     private string _address;
     private string _birthDate;
 

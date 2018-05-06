@@ -1,21 +1,22 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Contact.Models;
+using HomeController.Models;
 
-namespace Contact.Controller
+namespace HomeController
 {
-  public class HomeController : Controller
+  public class ContactController : Controller
   {
     [HttpGet("/")]
-    public ActionResult Index();
+    public ActionResult Index()
     {
-      List <Contact> all Contacts = Contact.GetAll();
-      return View(allContacts);
+      List <Contact> all = Contact.GetAll();
+      //all is variable for <contact>
+      return View(all);
     }
 
     [HttpGet("/contact/new")]
-    public ActionResult CreateForm();
+    public ActionResult CreateForm()
     {
       return View();
     }
